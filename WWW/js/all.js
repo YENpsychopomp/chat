@@ -4,7 +4,7 @@ $(document).ready(function () {
         try {
             const response = await $.ajax({
                 type: "POST",
-                url: "http://192.168.1.108:9999/",
+                url: "http://192.168.72.56:1010/",
                 data: {
                     action: "ask",
                     question: mes,
