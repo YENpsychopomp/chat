@@ -58,6 +58,24 @@ section {
     backface-visibility: hidden;
 }
 
+.sign-loging .box>div i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 35px;
+    background: #6d6d6d;
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+
 .sign-loging .box>div h1 {
     color: #dbdbdb;
 }
@@ -148,7 +166,7 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 }
 
 .user_info>img {
-    width: 300px;
+    width: 50px;
 }
 
 .user_info .title {
@@ -159,6 +177,10 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
     transform: translateX(-50%);
     left: 50%;
     top: 50px;
+}
+
+.user_info .title a:hover{
+    background: transparent;
 }
 
 .user_info .login-no {
@@ -208,6 +230,76 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
     height: 100%;
     position: relative;
     padding: 50px 50px 10px 50px;
+}
+
+.chat .change_model{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px !important;
+    color: #dbdbdb;
+    font-weight: 600;
+    font-size: 22px;
+    gap: 10px;
+}
+
+.chat .change_model:hover{
+    background: #2c2c2c;
+}
+
+.chat .change_model i{
+    font-size: 12px;
+    transition: .5s;
+}
+
+.chat .model_list{
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    font-weight: 600;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #dbdbdb;
+    background: #2c2c2c;
+    border-radius: 15px;
+    font-size: 22px;
+    overflow: hidden;
+    gap: 10px;
+    opacity: 0;
+}
+
+.chat .model_list.show{
+    opacity: 1;
+}
+
+.chat .model_list li{
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 5px 20px;
+    transition: .5s;
+}
+
+.chat .model_list li:hover{
+    background: #535353;
+}
+
+.chat .model_list li.check{
+    padding-left: 0;
+}
+
+.chat .model_list li.check::before{
+    content: "✔️";
+    margin-right: 5px;
+    font-size: 18px;
 }
 
 .chat .chat_log {
@@ -320,7 +412,7 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
     white-space: pre-line;
 }
 
-.chat .chat_log .llama3_rep {
+.chat .chat_log .rep {
     max-width: 80%;
     text-align: justify;
     white-space: pre-line;
