@@ -64,7 +64,7 @@ $(document).ready(function () {
             let model = $(".chat .model_list li.check").attr("data-modelName");
             const response = await $.ajax({
                 type: "POST",
-                url: "http://192.168.1.108:9999/",
+                url: "http://192.168.107.101:9999/",
                 data: {
                     action: "ask",
                     question: mes,
