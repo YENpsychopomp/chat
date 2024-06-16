@@ -1,7 +1,13 @@
 $(document).ready(function () {
 
     // 前端動畫
-
+    window.onload = function () {
+        Swal.fire({
+            title: "伺服器未開放",
+            text: "因為Github page只支援網頁展示，所以本網頁僅用於展示版面與動態效果(還是可以發送訊息)。",
+            icon: "info"
+        });
+    };
     $(".cancel").click(function (e) {
         $(".sign-loging .box").animate({
             opacity: "0",
