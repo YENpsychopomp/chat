@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>llama3</title>
+        <link rel="icon" href="img/log.png">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.min.css"
+            integrity="sha256-h2Gkn+H33lnKlQTNntQyLXMWq7/9XI2rlPCsLsVcUBs="
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <section>
+            <div class="sign-loging">
+                <div class="box">
+                    <div class="login">
+                        <i class="fa-solid fa-xmark cancel"></i>
+                        <h1>Welcom</h1>
+                        <img src="img/log.png" alt="meta-logo">
+                        <div class="input">
+                            <input type="text" id="loginsacc-input"
+                                placeholder="電子郵件...">
+                            <input type="password" id="loginspw-input"
+                                placeholder="密碼...">
+                        </div>
+                        <button id="loginslogin-btn">登入</button>
+                        <pre>還沒註冊嗎?  <a href="#" id="loginssign">註冊帳號</a></pre>
+                    </div>
+                    <div class="sign">
+                        <i class="fa-solid fa-xmark cancel"></i>
+                        <h1>Welcom</h1>
+                        <img src="img/log.png" alt="meta-logo">
+                        <div class="input">
+                            <input type="text" id="signsacc-input"
+                                placeholder="電子郵件...">
+                            <input type="text" id="signspw-input"
+                                placeholder="密碼...">
+                            <input type="text" id="signscpw-input"
+                                placeholder="確認密碼...">
+                        </div>
+                        <button id="signslogin-btn">註冊</button>
+                        <pre>已經註冊了嗎?  <a href="#" id="signslogin">登入</a></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="user_info">
+                <div class="title"><a href="index.html">llama3</a></div>
+                <img src="img/giphy.gif" class="no-show wait" alt="loading-GIF">
+                <div class="login-no">
+                    <a href="#" id="loging">登入</a>
+                </div>
+                <div class="login-yes no-show">
+                    <div class="footer">
+                        <img src="img/user_icon.png" alt="user">
+                        <p id="user_name">User</p>
+                        <a href="#" id="logout">登出</a>
+                        <a href="#" id="changepw">變更密碼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="chat">
+                <ul class="change_model">
+                    <li">Llama3</li>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </ul>
+                <ul class="model_list">
+                    <li class="check" data-modelName="Llama3">Llama3</li>
+                    <li data-modelName="phi3:14b-medium-4k-instruct-q4_K_M">Phi</li>
+                    <li data-modelName="TAIDE">TAIDE</li>
+                    <li data-modelName="Llama3.2">Llama3.2</li>
+                </ul>
+                <div class="chat_log nothing_log">
+                    <p class="nothing_text">我是Llama，一個十分牛逼的人工智能</p>
+                </div>
+                <div class="chat_input">
+                    <div class="input">
+                        <input type="text" id="user_input" autocomplete="off"
+                            placeholder="Say something...">
+                        <span id="send"><i
+                                class="fa-regular fa-paper-plane"></i></span>
+                    </div>
+                    <div class="copyright">Copyright &copy; chichi.
+                        保留一切權利。</div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.all.min.js"
+            integrity="sha256-sxTH7wLusVF/zFlnDQEmsmwYORsWdufWfjsxdVYGRNI="
+            crossorigin="anonymous"></script>
+        <script src="js/all.js"></script>
+    </body>
+</html>
